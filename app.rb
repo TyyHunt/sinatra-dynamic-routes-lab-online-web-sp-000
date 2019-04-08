@@ -19,4 +19,14 @@ class App < Sinatra::Base
     @speech = "#{@phrase}" * @num
     "#{@speech}"
   end
+
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
+    @first = params[:word1]
+    @sec = params[:word2]
+    @third = params[:word3]
+    @fourth = params[:word4]
+    @fifth = params[:word5]
+    @sentence = "#{@first} #{@sec} #{@third} #{@fourth} #{@fifth}"
+    "#{@sentence}"
+  end
 end
