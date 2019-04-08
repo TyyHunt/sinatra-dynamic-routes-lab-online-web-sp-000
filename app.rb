@@ -46,7 +46,7 @@ class App < Sinatra::Base
     else
       "Sorry this is not a valid operation"
     end
-      
+
 
   end
 end
