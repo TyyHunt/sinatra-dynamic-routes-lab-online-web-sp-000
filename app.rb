@@ -26,7 +26,7 @@ class App < Sinatra::Base
     @third = params[:word3]
     @fourth = params[:word4]
     @fifth = params[:word5]
-    @sentence = "#{@first} #{@sec} #{@third} #{@fourth} #{@fifth}"
+    @sentence = "#{@first} #{@sec} #{@third} #{@fourth} #{@fifth}."
     "#{@sentence}"
   end
 end
