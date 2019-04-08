@@ -29,4 +29,12 @@ class App < Sinatra::Base
     @sentence = "#{@first} #{@sec} #{@third} #{@fourth} #{@fifth}."
     "#{@sentence}"
   end
+
+  get '/:operation/:number1/:number2' do
+    @sign = params[:operation]
+    @num1 = params[:number1].to_i
+    @num2 = params[:number2].to_i
+    @equation = @num1 @sign @num2 
+    "#{@equation}"
+  end
 end
